@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bingo</title>
+  <link href="vendors/icofont/icofont.min.css" rel="stylesheet">
+  <!----Style-->
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/game2.css">
+  <link rel="icon" type="image/x-icon" href="./ImageGame/logo_new.png">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @font-face {
+      font-family: kh;
+      src: url('./fonts/AKbalthom\ Freehand\ [Version\ 1.50]\ 082014.ttf');
+    }
+
+    @font-face {
+      font-family: kh1;
+      src: url('./fonts/Kh-Baphnom-026-Theany.ttf');
+    }
+
+    @font-face {
+      font-family: kh2;
+      src: url('./fonts/KhmerOScontent.ttf');
+    }
+
+    #result {
+      position: absolute;
+      font-size: 150px;
+      font-weight: 800;
+      color: white;
+    }
+
+    .containerbrand {
+      display: flex;
+      justify-content: space-between;
+      width: 400px;
+    }
+
+    .logos2 {
+      height: 60px;
+      width: 60px;
+      background-image: url("./ImageGame/logo_new.png");
+      background-size: 100% 100%;
+      background-position: center;
+    }
+
+    #block-logos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .smalltext {
+      font-size: 25px;
+      font-weight: 500;
+    }
+    #trTitle td {
+      text-align: center;
+      color: white;
+    }
+
+    #trColor {
+      text-align: center;
+      color: white;
+    }
+
+    #trOe {
+      text-align: center;
+      color: white;
+    }
+   #section-top-game2{
+    margin-top: -60px;
+   }
+    @media(max-width:1200px) {
+      .logos2 {
+        height: 30px;
+        width: 30px;
+        background-image: url("./ImageGame/logo_new.png");
+        background-size: 100% 100%;
+        background-position: center;
+      }
+      #section-top-game2{
+    margin-top: -10px;
+   }
+      #dot {
+        position: absolute;
+        top: 75px;
+        left: 125px;
+        width: 10px;
+        height: 10px;
+        background: #f3f0f0;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%
+      }
+
+      #sun {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 310px;
+        height: 310px;
+        top: -4px;
+        left: 0;
+      }
+
+      #result {
+        position: absolute;
+        font-size: 100px;
+        font-weight: 600;
+        color: white;
+      }
+
+      .smalltext {
+        font-size: 11px
+      }
+
+      .container {
+        width: 350px;
+      }
+
+      .containerbrand {
+        display: flex;
+        justify-content: space-between;
+        width: 140px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <div class="container" style="display: flex;justify-content: space-between;">
+      <div class="logo mr-auto d-md-block d-lg-none">
+        <a href="index.html"><img src="img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">5D Lotto</a></li>
+          <li class="active"><a href="bingo.html">iBiNGO</a></li>
+          <li><a href="start5.html">Star 5</a></li>
+          <li><a href="super99.html">Super 1/99</a></li>
+          <li><a href="fruit.html">Fruit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+  <section id="section-result">
+    <div class="container" id="section-top-game2">
+      <div class="row">
+        <div style="display: flex;justify-content: space-between;width: 100%;align-items: center;">
+          <div class="smalltext">
+            <span>iBiNGO</span>
+          </div>
+          <div class="containerbrand">
+            <div>
+              <span class="smalltext" id="spIssue">Issue: </span>
+            </div>
+          </div>
+          <div class="containertime">
+            <div>
+              <span class="smalltext" id="spDate">Date: </span>
+            </div>
+            <div>
+              <span class="smalltext">Time:<span id="spTime">00:00</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="border-radius: 20px;">                                           
+      <div class="row">
+        <div class="col-xl-6 content-bingo">
+          <div class="header-bingo">
+            <div class="user-code">
+              <p id="pIssue"></p>
+            </div>
+            <div class="run-time">
+              <center>
+                <span class="box-time" >End Time</span>
+                <div class="time-flex">
+                  <div class="time-box">
+                    <p class="box-time" id="h1">0</p>
+                  </div>
+                  <div class="time-box">
+                    <p class="box-time"  id="h2">0</p>
+                  </div>
+                  <span>:</span>
+                  <div class="time-box">
+                    <p class="box-time" id="m1">0</p>
+                  </div>
+                  <div class="time-box">
+                    <p class="box-time" id="pSound2">0</p>
+                  </div>
+                </div>
+              </center>
+            </div>
+            <div class="time">
+              <p class="timegame3">Time:<span id="pTime" class="timegame3">00:00</span></p>
+            </div>
+          </div>
+          <div class="body">
+            <div class="bingo-block">
+              <div class="bingo-image">
+                <div class="sun" id="sun">
+                  <div class="dot" id="dot"></div>
+                </div>
+                <div id="result"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-color-after">
+            <div class="flex-color">
+              <div class="red" id="red">
+                <span> ក្រហម</span>
+              </div>
+              <div class="black" id="black">
+                <span>ខ្មៅ</span>
+              </div>
+            </div>
+            <div class="flex-type-num">
+              <div class="event" id="event">
+                <span>គូ</span>
+              </div>
+              <div class="odd" id="odd">
+                <span>សេស</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex-direction">
+            <div class="j" id="j">
+              <span>ជើង</span>
+            </div>
+            <div class="k" id="k">
+              <span>កើត</span>
+            </div>
+            <div class="l" id="l">
+              <span>លិច</span>
+            </div>
+            <div class="t" id="t">
+              <span>ត្បូង</span>
+            </div>
+            <div class="n19" id="n19">
+              <span>19</span>
+            </div>
+            <div class="lucky-bingo" id="gold">
+              <span>BiNGO</span>
+            </div>
+          </div>
+          <div class="sound-block" style="margin-top: 10px;">
+            <button type="button" class="sound" id="sound">
+              <img id="myImg" class="img-sound" src="ImageGame/sound-png-3.png">
+            </button>
+          </div>
+        </div>
+        <div class="col-xl-6 content-bingo-right">
+          <div class="table1-game2">
+            <table class="table table-bordered">
+              <tbody>
+                <tr id="trTitle">
+                  <td colspan="10"><span style="font-family: kh2;">លទ្ធផលទិស(ENWS)-BiNGO(i)</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="table2-game2">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr id="trColor">
+                      <td colspan="10"><span style="font-family: kh2;">លទ្ធផលពណ៌​ [ក្រហម - ខ្មៅ]</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-xl-12">
+              <div class="table3-game2">
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr id="trOe">
+                      <td colspan="10"><span style="font-family: kh2;">លទ្ធផលលេខ[សេស-គូ]</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="vendors/jquery/jquery.min.js"></script>
+  <script src="vendors/jquery.easing/jquery.easing.min.js"></script>
+  <script src="vendors/jquery-sticky/jquery.sticky.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.2/signalr.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/timegame2.js?v=1.0.0"></script>
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5D|Game</title> 
+  <link href="vendors/icofont/icofont.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/game1.css">
+  <link rel="icon" type="image/x-icon" href="./ImageGame/logo_new.png">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @font-face {
+      font-family: kh;
+      src: url('./fonts/AKbalthom\ Freehand\ [Version\ 1.50]\ 082014.ttf')
+    }
+
+    @font-face {
+      font-family: kh1;
+      src: url('./fonts/Kh-Baphnom-026-Theany.ttf')
+    }
+
+    @font-face {
+      font-family: kh2;
+      src: url('./fonts/KhmerOScontent.ttf')
+    }
+  </style>
+</head>
+
+<body id="test1">
+  <div class="hello3"></div>
+  <header id="header">
+    <div class="container" style="display: flex;justify-content: space-between;">
+      <div class="logo mr-auto d-md-block d-lg-none">
+        <a href="index.html"><img src="img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+      <!-- <div class="fn-btn"><img src="img/Fn.svg" alt="" class="img-fluid" width="30"></div> -->
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">5D Lotto</a></li>
+          <li><a href="wheel.html">Lucky Wheel</a></li>
+          <li><a href="start5.html">Star 5</a></li>
+          <li><a href="super99.html">Super 1/99</a></li>
+          <li><a href="fruit.html">Fruit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+  <section id="section-result">
+    <div class="">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contain-title">
+            <div class="brand">
+              <div class="text-brand">5D</div>
+              <div>
+                <img src="./ImageGame/start.png" height="25px" alt=""><img src="./ImageGame/start.png" height="25px"
+                  alt="">
+              </div>
+            </div>
+            <div class="text-Issue"><span id="spIssue"></span></div>
+            <div class="text-Date"><span id="spDate"></span></div>
+            <div class="text-Time"><span id="spTime"></span></div>
+          </div>
+          <div class="body-game">
+            <div class="hello"></div>
+            <div>
+              <div class="row1">
+                <div class="box-number">00</div>
+                <div class="box-number">01</div>
+                <div class="box-number">02</div>
+                <div class="box-number">03</div>
+                <div class="box-number">04</div>
+                <div class="box-number">05</div>
+                <div class="box-number">06</div>
+                <div class="box-number">07</div>
+                <div class="box-number">08</div>
+                <div class="box-number">09</div>
+              </div>
+              <div class="row1">
+                <div class="box-number">10</div>
+                <div class="box-number">11</div>
+                <div class="box-number">12</div>
+                <div class="box-number">13</div>
+                <div class="box-number">14</div>
+                <div class="box-number">15</div>
+                <div class="box-number">16</div>
+                <div class="box-number">17</div>
+                <div class="box-number">18</div>
+                <div class="box-number">19</div>
+              </div>
+              <div class="row1">
+                <div class="box-number">20</div>
+                <div class="box-number">21</div>
+                <div class="box-number">22</div>
+                <div class="box-number">23</div>
+                <div class="box-number">24</div>
+                <div class="box-number">25</div>
+                <div class="box-number">26</div>
+                <div class="box-number">27</div>
+                <div class="box-number">28</div>
+                <div class="box-number">29</div>
+              </div>
+              <div class="row1">
+                <div class="box-number">30</div>
+                <div class="box-number">31</div>
+                <div class="box-number">32</div>
+                <div class="box-number">33</div>
+                <div class="box-number">34</div>
+                <div class="box-number">35</div>
+                <div class="box-number">36</div>
+                <div class="box-number">37</div>
+                <div class="box-number">38</div>
+                <div class="box-number">39</div>
+              </div>
+              <div class="row1">
+                <div class="box-number">40</div>
+                <div class="box-number">41</div>
+                <div class="box-number">42</div>
+                <div class="box-number">43</div>
+                <div class="box-number">44</div>
+                <div class="box-number">45</div>
+                <div class="box-number">46</div>
+                <div class="box-number">47</div>
+                <div class="box-number">48</div>
+                <div class="box-number">49</div>
+              </div>
+              <div class="row1">
+                <div class="box-number">50</div>
+                <div class="box-number">51</div>
+                <div class="box-number">52</div>
+                <div class="box-number">53</div>
+                <div class="box-number">54</div>
+                <div class="box-number">55</div>
+                <div class="box-number">56</div>
+                <div class="box-number">57</div>
+                <div class="box-number">58</div>
+                <div class="box-number">59</div>
+              </div>
+              <div class="row1">
+                <div class="box-number">60</div>
+                <div class="box-number">61</div>
+                <div class="box-number">62</div>
+                <div class="box-number">63</div>
+                <div class="box-number">64</div>
+                <div class="box-number">65</div>
+                <div class="box-number">66</div>
+                <div class="box-number">67</div>
+                <div class="box-number">68</div>
+                <div class="box-number">69</div>
+              </div>
+              <div class="row1">
+                <div class="box-number">70</div>
+                <div class="box-number">71</div>
+                <div class="box-number">72</div>
+                <div class="box-number">73</div>
+                <div class="box-number">74</div>
+                <div class="box-number">75</div>
+                <div class="box-number">76</div>
+                <div class="box-number">77</div>
+                <div class="box-number">78</div>
+                <div class="box-number">79</div>
+              </div>
+              <div class="row1">
+                <div class="box-number">80</div>
+                <div class="box-number">81</div>
+                <div class="box-number">82</div>
+                <div class="box-number">83</div>
+                <div class="box-number">84</div>
+                <div class="box-number">85</div>
+                <div class="box-number">86</div>
+                <div class="box-number">87</div>
+                <div class="box-number">88</div>
+                <div class="box-number">89</div>
+              </div>
+              <div class="row1">
+                <div class="box-number">90</div>
+                <div class="box-number">91</div>
+                <div class="box-number">92</div>
+                <div class="box-number">93</div>
+                <div class="box-number">94</div>
+                <div class="box-number">95</div>
+                <div class="box-number">96</div>
+                <div class="box-number">97</div>
+                <div class="box-number">98</div>
+                <div class="box-number">99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 midle-block">
+          <div class="Time_in_block">
+            <div class="run-time">
+              <center>
+                <span class="box-time-title">End Time</span>
+                <div class="time-flex">
+                  <div class="time-box">
+                    <p class="box-time" id="h1">0</p>
+                  </div>
+                  <div class="time-box">
+                    <p class="box-time" id="h2">0</p>
+                  </div>
+                  <span>:</span>
+                  <div class="time-box">
+                    <p class="box-time" id="m1">0</p>
+                  </div>
+                  <div class="time-box">
+                    <p class="box-time" id="m2">0</p>
+                  </div>
+                </div>
+              </center>
+            </div>
+          </div>
+          <div class="block-3d-random">
+            <div class="hello4"></div>
+            <div class="title-3d">
+              <div class="brand-3d">
+                <div class="Thd">
+                  <span>5D</span>
+                </div>
+                <div class="star">
+                  <span><img src="./ImageGame/start.png" height="25px" alt=""></span>
+                  <span><img src="./ImageGame/start.png" height="25px" alt=""></span>
+                  <span><img src="./ImageGame/start.png" height="25px" alt=""></span>
+                </div>
+              </div>
+              <div class="img-draw-3d">
+                <div class="re1-3d">?</div>
+                <div class="re2-3d">?</div>
+                <div class="re3-3d">?</div>
+                <div class="show show1"></div>
+                <div class="show show2"></div>
+                <div class="show show3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="block-result-2d">
+            <div class="header-title">
+              <span><img src="./ImageGame/start.png" height="25px" alt=""><img src="./ImageGame/start.png" height="25px"
+                  alt=""></span>
+            </div>
+            <div class="post-result-2d">
+              <div class="post-A">A1</div>
+              <div class="post-A">B2</div>
+              <div class="post-A">C3</div>
+              <div class="post-A">D4</div>
+            </div>
+            <div class="result-2d">
+              <div class="result_2d"></div>
+              <div class="result_2d"></div>
+              <div class="result_2d"></div>
+              <div class="result_2d"></div>
+            </div>
+            <div class="Time-result-2d">
+              <div class="Time_result_2d">1:90</div>
+              <div class="Time_result_2d">1:90</div>
+              <div class="Time_result_2d">1:90</div>
+              <div class="Time_result_2d">1:90</div>
+            </div>
+          </div>
+          <div class="block-result-2d">
+            <div class="header-title">
+              <span><img src="./ImageGame/start.png" height="25px" alt=""><img src="./ImageGame/start.png" height="25px"
+                  alt=""><img src="./ImageGame/start.png" height="25px" alt=""></span>
+            </div>
+            <div class="post-result-2d">
+              <div class="post-A">A1</div>
+              <div class="post-A">B2</div>
+              <div class="post-A">C3</div>
+              <div class="post-A">D4</div>
+            </div>
+            <div class="result-2d">
+              <div class="result_2d result_3d"></div>
+              <div class="result_2d result_3d"></div>
+              <div class="result_2d result_3d"></div>
+              <div class="result_2d result_3d"></div>
+            </div>
+            <div class="Time-result-2d">
+              <div class="Time_result_2d">1:800</div>
+              <div class="Time_result_2d">1:800</div>
+              <div class="Time_result_2d">1:800</div>
+              <div class="Time_result_2d">1:800</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 right-block">
+          <div class="header-histories">
+            <span>Histories</span>
+            <hr>
+            <div class="container-result-5d">
+            </div>
+          </div>
+          <div id="pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--==================Footer-->
+  <!--End footer-->
+  <script src="vendors/jquery/jquery.min.js"></script>
+  <script src="vendors/jquery.easing/jquery.easing.min.js"></script>
+  <script src="vendors/jquery-sticky/jquery.sticky.js"></script>
+  <!-- Template Main JS File -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.2/signalr.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/pager.js"></script>
+  <script src="js/timegame.js"></script>
+</body>
+
+</html>

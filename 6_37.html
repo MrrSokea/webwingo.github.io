@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6/37</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <!-- Vendor CSS Files -->
+  <link href="vendors/icofont/icofont.min.css" rel="stylesheet">
+  <!----Style-->
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/game4.css">
+  <link rel="stylesheet" type="text/css" href="css/simpleAniball.css">
+  <link rel="icon" type="image/x-icon" href="./ImageGame/logo_new.png">
+  <style>
+    @font-face {
+      font-family: kh;
+      src: url('./fonts/AKbalthom\ Freehand\ [Version\ 1.50]\ 082014.ttf')
+    }
+
+    @font-face {
+      font-family: kh1;
+      src: url('./fonts/Kh-Baphnom-026-Theany.ttf')
+    }
+
+    @font-face {
+      font-family: kh2;
+      src: url('./fonts/KhmerOScontent.ttf')
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: kh2;
+    }
+
+    #ballg8 {
+      height: 100px;
+      width: 100px
+    }
+
+    .divmap {
+      display: flex;
+      justify-content: center;
+    }
+
+    .ball {
+      color: black;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600
+    }
+
+    .lball {
+      height: 35px;
+      width: 35px;
+      font-size: 25px
+    }
+
+    .sball {
+      height: 18px;
+      width: 18px;
+      font-size: 18px
+    }
+
+    .br {
+      background-color: red
+    }
+
+    .bg {
+      background-color: green
+    }
+
+    .by {
+      background-color: yellow
+    }
+
+    .bp {
+      background-color: pink
+    }
+
+    .bb {
+      background-color: blue
+    }
+
+    #g3_tb_result2 {
+      visibility: hidden;
+      position: absolute;
+    }
+
+    @media(max-width: 1200px) {
+      #g3_tb_result2 {
+        visibility: visible;
+        position: relative;
+      }
+
+      #g3_tb_result1 {
+        visibility: hidden;
+        position: absolute;
+      }
+
+      .balls-result2-contain .ball-spacail,
+      .balls-result2-contain .ball {
+        display: flex;
+        height: 23px;
+        width: 23px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 700;
+        margin: 1px 1px 1px 5px;
+      }
+
+      .smalltext {
+        font-size: 11px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <div class="container" style="display: flex;justify-content: space-between;">
+      <div class="logo mr-auto d-md-block d-lg-none">
+        <a href="index.html"><img src="img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+      <!-- <div class="fn-btn"><img src="img/Fn.svg" alt="" class="img-fluid" width="30"></div> -->
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">5D Lotto</a></li>
+          <li><a href="bingo.html">iBiNGO</a></li>
+          <li><a href="start5.html">Star 5</a></li>
+          <li class="active"><a href="super99.html">Super99 GAME</a></li>
+          <li><a href="fruit.html">FRUIT GAME</a></li>
+          <button class="hello1" id="hello1">CLEAN</button>
+        </ul>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+  <section id="section-result">
+    <div class="container" id="top-game1">
+      <div class="row padd-0">
+        <div class="contain_top_637">
+          <span>6/37</span>
+          <span class="smalltext" id="spIssue">Issue: </span>
+          <span class="smalltext" id="spDate">Date: </span>
+          <span class="smalltext">Time:<span id="spTime">00:00</span></span>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="container" id="section-game2">
+      <div class="row">
+        <div class="col-xl-6" id="ball-bound">
+          <div class="bound-backs" id="boundBack1">
+            <div class="ball-bound-greenss1" id="ns1">
+              1
+            </div>
+            <div class="ball-bound-bluess1" id="ns2">
+              2
+            </div>
+            <div class="ball-bound-redss2" id="ns3">
+              3
+            </div>
+            <div class="ball-bound-greenss2" id="ns4">
+              4
+            </div>
+            <div class="ball-bound-redss3" id="ns5">
+              5
+            </div>
+            <div class="ball-bound-bluess2" id="ns6">
+              6
+            </div>
+            <div class="ball-bound-redss4" id="ns7">
+              7
+            </div>
+            <div class="ball-bound-bluess3" id="ns8">
+              8
+            </div>
+            <div class="ball-bound-greenss3" id="ns9">
+              9
+            </div>
+            <div class="ball-bound-redss5" id="ns10">
+              10
+            </div>
+            <div class="ball-bound-bluess4" id="ns11">
+              11
+            </div>
+            <div class="ball-bound-greenss4" id="ns12">
+              12
+            </div>
+            <div class="ball-bound-redss6" id="ns13">
+              13
+            </div>
+            <div class="ball-bound-bluess5" id="ns14">
+              14
+            </div>
+            <div class="ball-bound-bluess6" id="ns15">
+              15
+            </div>
+            <div class="ball-bound-redss7" id="ns16">
+              16
+            </div>
+            <div class="ball-bound-greenss5" id="ns17">
+              17
+            </div>
+            <div class="ball-bound-redss8" id="ns18">
+              18
+            </div>
+            <div class="ball-bound-greenss6" id="ns19">
+              19
+            </div>
+            <div class="ball-bound-greenss7" id="ns20">
+              20
+            </div>
+            <div class="ball-bound-bluess7" id="ns21">
+              21
+            </div>
+            <div class="ball-bound-redss9" id="ns22">
+              22
+            </div>
+            <div class="ball-bound-bluess8" id="ns23">
+              23
+            </div>
+            <div class="ball-bound-bluess9" id="ns24">
+              24
+            </div>
+            <div class="ball-bound-greenss9" id="ns25">
+              25
+            </div>
+            <div class="ball-bound-redss10" id="ns26">
+              26
+            </div>
+            <div class="ball-bound-greenss11" id="ns27">
+              27
+            </div>
+            <div class="ball-bound-greenss12" id="ns28">
+              28
+            </div>
+            <div class="ball-bound-greenss14" id="ns29">
+              29
+            </div>
+            <div class="ball-bound-redss11" id="ns31">
+              31
+            </div>
+            <div class="ball-bound-redss12" id="ns32">
+              32
+            </div>
+            <div class="ball-bound-redss13" id="ns33">
+              33
+            </div>
+            <div class="wells"></div>
+            <div class="ball-bound-redss14" id="ns34">
+              34
+            </div>
+            <div class="ball-bound-bluess10" id="ns36">
+              36
+            </div>
+            <div class="ball-bound-greenss15" id="ns30">
+              30
+            </div>
+            <div class="ball-bound-redss15" id="ns35">
+              35
+            </div>
+
+            <div class="ball-bound-bluess11" id="ns37">
+              37
+            </div>
+          </div>
+          <div class="bound-back" style="display: none;" id="boundBack2">
+            <div class="ball-bound-greens1" id="n1">
+              1
+            </div>
+            <div class="ball-bound-blues1" id="n2">
+              2
+            </div>
+            <div class="ball-bound-reds2" id="n3">
+              3
+            </div>
+            <div class="ball-bound-greens2" id="n4">
+              4
+            </div>
+            <div class="ball-bound-reds3" id="n5">
+              5
+            </div>
+            <div class="ball-bound-blues2" id="n6">
+              6
+            </div>
+            <div class="ball-bound-reds4" id="n7">
+              7
+            </div>
+            <div class="ball-bound-blues3" id="n8">
+              8
+            </div>
+            <div class="ball-bound-greens3" id="n9">
+              9
+            </div>
+            <div class="ball-bound-reds5" id="n10">
+              10
+            </div>
+            <div class="ball-bound-blues4" id="n11">
+              11
+            </div>
+            <div class="ball-bound-greens4" id="n12">
+              12
+            </div>
+            <div class="ball-bound-reds6" id="n13">
+              13
+            </div>
+            <div class="ball-bound-blues5" id="n14">
+              14
+            </div>
+            <div class="ball-bound-blues6" id="n15">
+              15
+            </div>
+            <div class="ball-bound-reds7" id="n16">
+              16
+            </div>
+            <div class="ball-bound-greens5" id="n17">
+              17
+            </div>
+            <div class="ball-bound-reds8" id="n18">
+              18
+            </div>
+            <div class="ball-bound-greens6" id="n19">
+              19
+            </div>
+            <div class="ball-bound-greens7" id="n20">
+              20
+            </div>
+            <div class="ball-bound-blues7" id="n21">
+              21
+            </div>
+            <div class="ball-bound-reds9" id="n22">
+              22
+            </div>
+            <div class="ball-bound-blues8" id="n23">
+              23
+            </div>
+            <div class="ball-bound-blues9" id="n24">
+              24
+            </div>
+            <div class="ball-bound-greens9" id="n25">
+              25
+            </div>
+            <div class="ball-bound-reds10" id="n26">
+              26
+            </div>
+            <div class="ball-bound-greens11" id="n27">
+              27
+            </div>
+            <div class="ball-bound-greens12" id="n28">
+              28
+            </div>
+            <div class="ball-bound-greens14" id="n29">
+              29
+            </div>
+            <div class="ball-bound-reds11" id="n31">
+              31
+            </div>
+            <div class="ball-bound-reds12" id="n32">
+              32
+            </div>
+            <div class="ball-bound-reds13" id="n33">
+              33
+            </div>
+            <div class="well"></div>
+            <div class="ball-bound-reds14" id="n34">
+              34
+            </div>
+            <div class="ball-bound-blues10" id="n36">
+              36
+            </div>
+            <div class="ball-bound-greens15" id="n30">
+              30
+            </div>
+            <div class="ball-bound-reds15" id="n35">
+              35
+            </div>
+
+            <div class="ball-bound-blues11" id="n37">
+              37
+            </div>
+            <div class="ball-bound-greens8" id="ballg8" style="display: none;">
+              <span id="lucky-num"></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6" id="ball-bound-result">
+          <div class="row">
+            <div id="containerluckynum">
+              <div class="game-ic">
+                <span id="sum-nums">?</span>
+              </div>
+              <div class="flex-ball">
+                <div class="ball">
+                  <div class="ball-f">
+                    <span id="lucky-num1">?</span>
+                  </div>
+                  <div class="ball-f">
+                    <span id="lucky-num2">?</span>
+                  </div>
+                  <div class="ball-f">
+                    <span id="lucky-num3">?</span>
+                  </div>
+                  <div class="ball-f">
+                    <span id="lucky-num4">?</span>
+                  </div>
+                  <div class="ball-f">
+                    <span id="lucky-num5">?</span>
+                  </div>
+                </div>
+
+                <div class="ball-fs">
+                  <span id="lucky-num6">?</span>
+                </div>
+              </div>
+            </div>
+            <div class="box-block">
+              <div class="box" id="largtext">
+                <span class="larg-text" id="colornum1">1</span><br>
+                <span class="medium-text">(21-81)</span><br>
+                <span class="small-texts">(x9.2)</span>
+              </div>
+              <div class="box" id="largtext2">
+                <span class="larg-text" id="colornum2">2</span><br>
+                <span class="medium-text">(82-101)</span><br>
+                <span class="small-texts">(x4.6)</span>
+              </div>
+              <div class="box" id="largtext3">
+                <span class="larg-text" id="colornum3">3</span><br>
+                <span class="medium-text">(102-126)</span><br>
+                <span class="small-texts">(x2.4)</span>
+              </div>
+              <div class="box" id="largtext4">
+                <span class="larg-text" id="colornum4">4</span><br>
+                <span class="medium-text">(127-146)</span><br>
+                <span class="small-texts">(x4.6)</span>
+              </div>
+              <div class="box" id="largtext5">
+                <span class="larg-text" id="colornum5">5</span><br>
+                <span class="medium-text">(147-207)</span><br>
+                <span class="small-texts">(x9.2)</span>
+              </div>
+            </div>
+            <div class="table-result2">
+              <table class="table table-bordered" id="g3_tb_result1">
+                <tbody>
+                  <!-- <tr style="background-color: rgba(0, 0, 0, 0.542);">
+                    <td colspan="4"><span class="table-result-header">Records</span> </td>
+                  </tr> -->
+                  <tr id="trTitle">
+                    <td><span class="title-result2">Date</span></td>
+                    <td><span class="title-result2">Issue</span> </td>
+                    <td><span class="title-result2">6/37</span> </td>
+                    <td><span class="title-result2">Range</span> </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-bordered" id="g3_tb_result2">
+                <tbody>
+                  <tr id="trTitle2">
+                    <td><span class="title-result2">Issue/Date</span></td>
+                    <td><span class="title-result2">6/37</span> </td>
+                    <td><span class="title-result2">Range</span> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div style="display: flex;justify-content: space-between;width: 97%;">
+              <div id="pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-games2">
+            <div class="table1">
+              <table class="table table-bordered table-sm"
+                style="border-left-style: none;border-bottom-style: none;border-right-style: none;" id="tableGame2">
+                <tbody>
+                  <tr id="trMap">
+                    <td colspan="15"
+                      style="border-style: none;border-top-left-radius: 20px;border-top-right-radius: 20px;"><span
+                        style="color: white;font-family: kh;font-weight: 500;font-size: 20px;">
+                        លទ្ធផល[ចន្លោះលេខ]</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--==================Footer-->
+  <!--End footer-->
+  <script src="vendors/jquery/jquery.min.js"></script>
+  <script src="vendors/jquery.easing/jquery.easing.min.js"></script>
+  <script src="vendors/jquery-sticky/jquery.sticky.js"></script>
+  <!-- Template Main JS File -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.2/signalr.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/pager.js"></script>
+  <script src="js/timegame4.js?v=1.0.0"></script>
+</body>
+
+</html>

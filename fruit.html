@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit|Game</title>
+  <link href="vendors/icofont/icofont.min.css" rel="stylesheet">
+  <!----Style-->
+  <link rel="stylesheet" type="text/css" href="css/game5.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/game2.css">
+  <link rel="icon" type="image/x-icon" href="./ImageGame/logo_new.png">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @font-face {
+      font-family: kh;
+      src: url('./fonts/AKbalthom\ Freehand\ [Version\ 1.50]\ 082014.ttf');
+    }
+
+    @font-face {
+      font-family: kh1;
+      src: url('./fonts/Kh-Baphnom-026-Theany.ttf');
+    }
+
+    @font-face {
+      font-family: kh2;
+      src: url('./fonts/KhmerOScontent.ttf');
+    }
+
+    #result {
+      position: absolute;
+      font-size: 150px;
+      font-weight: 800;
+      color: white;
+    }
+
+    .containerbrand {
+      display: flex;
+      justify-content: space-between;
+      width: 400px;
+    }
+
+    .containertime {
+      display: flex;
+      justify-content: space-between;
+      width: 400px;
+    }
+
+    .logos2 {
+      height: 60px;
+      width: 60px;
+      background-image: url("./ImageGame/logo_new.png");
+      background-size: 100% 100%;
+      background-position: center;
+    }
+
+    #block-logos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #trTitle td {
+      text-align: center;
+      color: white;
+    }
+
+    #trColor {
+      text-align: center;
+      color: white;
+    }
+    #trOe {
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container" style="display: flex;justify-content: space-between;">
+      <div class="logo mr-auto d-md-block d-lg-none">
+        <a href="index.html"><img src="img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">5D Lotto</a></li>
+          <li><a href="wheel.html">Lucky Wheel</a></li>
+          <li><a href="start5.html">Star 5</a></li>
+          <li><a href="super99.html">Super 1/99</a></li>
+          <li class="active"><a href="fruit.html">Fruit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+  <section id="section-result">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="contain-title-fruit">
+          <div>
+            <span class="smalltext-fruit">FRUIT</span>
+          </div>
+          <div class="containerbrand">
+            <div>
+              <span class="smalltext-fruit" id="spIssue"></span>
+            </div>
+          </div>
+          <div class="containertime">
+            <div>
+              <span class="smalltext-fruit" id="spDate"></span>
+            </div>
+            <div>
+              <span class="smalltext-fruit">Time:<span id="spTime"></span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>                        
+    <div>
+      <div class="row flex-content">
+        <div class="col-md-6 content-fruit">
+          <!-- header block spin game fruit -->
+          <div class="block-top-fruit">
+            <div class="issue_time">
+              <div class="return"><span>*ការសងត្រឡប់:</span></div>
+              <div class="return"><span>-ផ្លែឈើ </span><span>1=8.2</span></div>
+              <div class="return"><span>-ក្រហម </span><span> 1=4.2</span></div>
+              <div class="return"><span>-ខ្មៅ </span> <span> 1=2.4</span></div>
+              <div class="return"><span>-លឿង </span> <span> 1=2.0</span></div>
+            </div>
+            <div class="run-time">
+              <center>
+                <span class="box-time">End Time</span>
+                <div class="time-flex">
+                  <div class="time-box">
+                    <p class="box-time" id="h1">0</p>
+                  </div>
+                  <div class="time-box">
+                    <p class="box-time" id="h2">0</p>
+                  </div>
+                  <span>:</span>
+                  <div class="time-box">
+                    <p class="box-time" id="m1">0</p>
+                  </div>
+                  <div class="time-box">
+                    <p class="box-time" id="m2">0</p>
+                  </div>
+                </div>
+              </center>
+            </div>
+          </div>
+          <!-- body block spin game fruit -->
+          <div class="block-body-fruit">
+            <div class="image-arrow">
+              <img src="ImageGame/test1.png" alt="" class="arrow">
+            </div>
+            <div class="contain-image">
+
+            </div>
+            <div class="hello"></div>
+            <div class="contain-image-in">
+
+            </div>
+            <div class="text-result"></div>
+            <div class="sound-block-fruit">
+              <button type="button" class="sound" id="sound">
+                <img id="myImg" class="myImg" src="ImageGame/sound-png-3.png">
+              </button>
+            </div>
+          </div>
+          <!-- footer block spin game fruit -->
+          <div class="block-footer-fruit">
+            <div class="color-result">
+              <div class="c-color red-result"><span>ក្រហម</span></div>
+              <div class="c-color black-result"><span>ខ្មៅ</span></div>
+              <div class="c-color yellow-result"><span>លឿង</span></div>
+            </div>
+            <div class="img-fruit-color">
+              <div class="fruit-img-blog1">
+                <div class="img-fruit"><img src="./ImageGame/Asset-1.png" alt="">
+                </div>
+                <div class="img-fruit"><img src="./ImageGame/Asset-2.png" alt="">
+                </div>
+                <div class="img-fruit"><img src="./ImageGame/Asset-3.png" alt=""></div>
+                <div class="img-fruit"><img src="./ImageGame/Asset-4.png" alt="">
+                </div>
+                <div class="img-fruit"><img src="./ImageGame/Asset-5.png" alt="">
+                </div>
+
+              </div>
+              <div class="fruit-img-blog2">
+                <div class="img-fruit"><img src="./ImageGame/Asset-6.png" alt="">
+                </div>
+                <div class="img-fruit"><img src="./ImageGame/Asset-7.png" alt="">
+                </div>
+                <div class="img-fruit"><img src="./ImageGame/Asset-8.png" alt="">
+                </div>
+                <div class="img-fruit"><img src="./ImageGame/Asset-9.png" alt="">
+                </div>
+                <div class="img-fruit"><img src="./ImageGame/Asset-10.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 content-fruit-right">
+          <div class="row">
+            <div class="col-xl-12">
+              <table class="table table-bordered table-sm">
+                <tbody>
+                  <tr id="trMap">
+                    <td colspan="15">
+                      <center><span class="tb-title">Color Draw Result</span></center>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-xl-12">
+              <table class="table table-bordered table-sm">
+                <tbody>
+                  <tr id="trMapfruit">
+                    <td colspan="15">
+                      <center><span class="tb-title">Fruit Spin Draw Result</span></center>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="vendors/jquery/jquery.min.js"></script>
+  <script src="vendors/jquery.easing/jquery.easing.min.js"></script>
+  <script src="vendors/jquery-sticky/jquery.sticky.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.2/signalr.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/game5.js"></script>
+</body>
+
+</html>
