@@ -7,12 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Star 5|Game</title>
-  <!-- Vendor CSS Files -->
-  <link href="vendors/icofont/icofont.min.css" rel="stylesheet">
   <!----Style-->
   <link rel="stylesheet" type="text/css" href="css/app.css">
   <link rel="stylesheet" type=" text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/game3.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/star5.css">
   <link rel="icon" type="image/x-icon" href="./ImageGame/logo_new.png">
   <style>
     html {
@@ -37,28 +36,31 @@
 </head>
 
 <body>
-  <header id="header">
-    <div class="container" style="display: flex;justify-content: space-between;">
-      <div class="logo mr-auto d-md-block d-lg-none">
-        <a href="index.html"><img src="img/logo.png" alt="" class="img-fluid"></a>
-      </div>
-      <!-- <div class="fn-btn"><img src="img/Fn.svg" alt="" class="img-fluid" width="30"></div> -->
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li><a href="index.html">5D Lotto</a></li>
-          <li><a href="wheel.html">Lucky Wheel</a></li>
-          <li class="active"><a href="start5.html">Star 5</a></li>
-          <li><a href="super99.html">Super 1/99</a></li>
-          <li><a href="fruit.html">Fruit</a></li>
-        </ul>
-      </nav>
+  <div class="nav-bar">
+    <div class="block-item">
+      <a href="index.html">
+        <div class="menu-item bd-right-left">LUCKY 5D</div>
+      </a>
+      <a href="wheel.html">
+        <div class="menu-item bd-right">THE WHEEL</div>
+      </a>
+      <a href="start5.html">
+        <div class="menu-item bd-right active-menu">STAR 5</div>
+      </a>
+      <a href="super99.html">
+        <div class="menu-item bd-right">SUPER 1/99</div>
+      </a>
+      <a href="fruit.html">
+        <div class="menu-item bd-right">FRUIT</div>
+      </a>
     </div>
-  </header><!-- End Header -->
+  </div>
   <section>
+  
     <div class="row contain-game-6-37">
-      <div class="col-md-8">
+      <div class="col-md-9">
         <div class="row">
-          <div class="col-md-6 padd-0">
+          <div class="col-md-5 padd-0">
             <div class="contain-6-37">
               <div class="header-block-6-37">
                 <div class="block-baner">
@@ -169,7 +171,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 padd-0">
+          <div class="col-md-7 padd-0">
             <div class="header2-6-37">
               <div class="block-run-time-6-37">
                 <img class="image-loading" src="./ImageGame/loading.png" alt=""><span class="time-init"></span><span
@@ -240,13 +242,9 @@
         </div>
 
       </div>
-      <div class="col-md-4 padd-0">
+      <div class="col-md-3 padd-0">
         <div class="row">
-          <div class="col-md-4 flex-image">
-            <span><img class="img-logo" src="./ImageGame/logo_new.png" alt=""></span>
-            <span><img class="img-logo" src="./ImageGame/qr-code.PNG" alt=""></span>
-          </div>
-          <div class="col-md-8">
+          <div class="col-md-12">
             <div class="header-title-result">
               <span>លទ្ធផលចុងក្រោយ</span><span><img src="" alt=""></span>
             </div>
@@ -273,18 +271,14 @@
         </table>
       </div>
     </div>
+    <div id="counter"></div>
   </section>
-
-  <!--==================Footer-->
-  <!--End footer-->
-  <script src="vendors/jquery/jquery.min.js"></script>
-  <script src="vendors/jquery.easing/jquery.easing.min.js"></script>
-  <script src="vendors/jquery-sticky/jquery.sticky.js"></script>
-  <!-- Template Main JS File -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.2/signalr.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/pager.js"></script>
-  <script src="js/timegame3.js?v=1.0.0"></script>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.2/signalr.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+<script src="js/pager.js"></script>
+<script src="js/star5.js?v=1.0.0"></script>
 
 </html>

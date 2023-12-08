@@ -1,0 +1,33 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Counting</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <div id="counter">0</div>
+    <script>
+        $(document).ready(function () {
+            let count = localStorage.getItem('count') || 0;
+            $('#counter').text(count);
+            function incrementCount() {
+                count++;
+                $('#counter').text(count);
+                if (count >= 20) {
+                    clearInterval(intervalId);
+                    localStorage.clear();
+                } else {
+                    localStorage.setItem('count', count);
+                }
+            }
+            const intervalId = setInterval(incrementCount, 1000);
+        });
+    </script>
+
+</body>
+
+</html> -->

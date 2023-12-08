@@ -7,9 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super99|Game</title>
-    <!-- Vendor CSS Files -->
-    <link href="vendors/icofont/icofont.min.css" rel="stylesheet">
     <!----Style-->
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <link rel="stylesheet" type=" text/css" href="css/style.css">
     <link rel="stylesheet" href="css/super99.css">
@@ -37,23 +36,16 @@
 </head>
 
 <body>
-    <header id="header">
-        <div class="container" style="display: flex;justify-content: space-between;">
-            <div class="logo mr-auto d-md-block d-lg-none">
-                <a href="index.html"><img src="img/logo.png" alt="" class="img-fluid"></a>
-            </div>
-            <!-- <div class="fn-btn"><img src="img/Fn.svg" alt="" class="img-fluid" width="30"></div> -->
-            <nav class="nav-menu d-none d-lg-block">
-                <ul>
-                    <li><a href="index.html">5D Lotto</a></li>
-                    <li><a href="wheel.html">Lucky Wheel</a></li>
-                    <li><a href="start5.html">Star 5</a></li>
-                    <li class="active"><a href="super99.html">Super 1/99</a></li>
-                    <li><a href="fruit.html">Fruit</a></li>
-                </ul>
-            </nav>
+    <div class="nav-bar">
+        <div class="block-item">
+          <a href="index.html"><div class="menu-item bd-right-left">LUCKY 5D</div></a>
+          <a href="wheel.html"><div class="menu-item bd-right">THE WHEEL</div></a>
+          <a href="start5.html"><div class="menu-item bd-right">STAR 5</div></a>
+          <a href="super99.html"><div class="menu-item bd-right active-menu">SUPER 1/99</div></a>
+          <a href="fruit.html"><div class="menu-item bd-right">FRUIT</div></a>
         </div>
-    </header><!-- End Header -->
+    
+      </div>
     <section>
         <div class="container-fluid">
             <div class="contain-number">
@@ -231,22 +223,16 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="contain-history">
-                        
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!--==================Footer-->
-    <!--End footer-->
-    <script src="vendors/jquery/jquery.min.js"></script>
-    <script src="vendors/jquery.easing/jquery.easing.min.js"></script>
-    <script src="vendors/jquery-sticky/jquery.sticky.js"></script>
-    <!-- Template Main JS File -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.2/signalr.min.js"></script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.2/signalr.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
     <script src="js/super99.js"></script>
-</body>
-
 </html>
